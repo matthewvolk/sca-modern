@@ -10,6 +10,8 @@ export const metadata: Metadata = {
   description: "BigCommerce Single Click Application",
 };
 
+export const runtime = "nodejs";
+
 export default function RootLayout({
   children,
 }: {
