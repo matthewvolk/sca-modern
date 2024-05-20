@@ -14,7 +14,6 @@ export default async function Home() {
     params: {
       header: {
         Accept: "application/json",
-        "Content-Type": "application/json",
       },
     },
   });
