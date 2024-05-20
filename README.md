@@ -4,6 +4,12 @@ A [Next.js](https://nextjs.org/) starter app for building [BigCommerce Single-Cl
 
 ## Getting Started
 
+(Optional) For VSCode, copy the example VSCode config
+
+```bash
+cp .vscode/settings.example.json .vscode/settings.json
+```
+
 Copy `.env.example` and fill out environment variables
 
 ```bash
