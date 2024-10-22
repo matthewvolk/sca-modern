@@ -10,6 +10,7 @@ import { db } from "@/server/db";
 import { storeUsers, stores, users } from "@/server/db/schema";
 
 const QueryParamSchema = z.object({
+  signed_payload: z.string(),
   signed_payload_jwt: z.string(),
 });
 
@@ -25,7 +26,7 @@ export const GET = async (request: NextRequest) => {
   }
 
   const bc = bigrequest.oauth({
-    authCallback: `${env.APP_ORIGIN}/auth/install`,
+    authCallback: `${env.APP_ORIGIN}/auth/load`,
     clientId: env.CLIENT_ID,
     clientSecret: env.CLIENT_SECRET,
   });

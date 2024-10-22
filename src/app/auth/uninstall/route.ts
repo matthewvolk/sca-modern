@@ -23,7 +23,7 @@ export const GET = async (request: NextRequest) => {
   }
 
   const bc = bigrequest.oauth({
-    authCallback: `${env.APP_ORIGIN}/auth/install`,
+    authCallback: `${env.APP_ORIGIN}/auth/uninstall`,
     clientId: env.CLIENT_ID,
     clientSecret: env.CLIENT_SECRET,
   });
