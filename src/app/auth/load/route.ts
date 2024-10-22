@@ -10,7 +10,6 @@ import { db } from "@/server/db";
 import { storeUsers, stores, users } from "@/server/db/schema";
 
 const QueryParamSchema = z.object({
-  signed_payload: z.string(),
   signed_payload_jwt: z.string(),
 });
 
