@@ -15,7 +15,7 @@ const ClientTokenSchema = z.object({
 });
 
 export const authorize = async () => {
-  const cookieJar = cookies();
+  const cookieJar = await cookies();
   const jwt = cookieJar.get(TOKEN_COOKIE_KEY)?.value;
 
   if (!jwt) {
