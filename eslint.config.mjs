@@ -1,16 +1,3 @@
-// const eslintConfig = [
-//   ...compat.extends("next/core-web-vitals", "next/typescript"),
-//   {
-//     rules: {
-//       "no-unused-vars": "error",
-//       "import/order": [
-//         "error",
-//         { "groups": ["builtin", "external", "parent", "sibling", "index"] }
-//       ]
-//     }
-//   }
-// ];
-
 import { dirname } from "path";
 import { fileURLToPath } from "url";
 
