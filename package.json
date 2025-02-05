@@ -17,7 +17,6 @@
     "@bigcommerce/big-design-theme": "^1.1.0",
     "@t3-oss/env-nextjs": "^0.11.1",
     "better-sqlite3": "^11.8.1",
-    "bigrequest": "^0.0.52",
     "drizzle-orm": "^0.38.4",
     "jose": "^5.9.6",
     "next": "15.1.5",

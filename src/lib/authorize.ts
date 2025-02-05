@@ -14,6 +14,8 @@ const ClientTokenSchema = z.object({
   storeId: z.number(),
 });
 
+export type StoreUser = Awaited<ReturnType<typeof authorize>>;
+
 export const authorize = async () => {
   const cookieJar = await cookies();
   const jwt = cookieJar.get(TOKEN_COOKIE_KEY)?.value;
